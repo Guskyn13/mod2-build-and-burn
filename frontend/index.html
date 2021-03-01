@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="app.js"></script>
+  <title>Video game fun</title>
+</head>
+<body>
+  <h1>Video Game Characters</h1>
+  <section id='game-section'></section>
+  <h3>Add game</h3>
+  <form id="game-form" action="http://localhost:3000/games" method="POST">
+    <lable for="game-name">Name</lable>
+    <input id="game-name" type="text" name="name">
+    <lable for="game-rating">Game Rating</lable>
+    <select id="game-rating" name="rating">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+    </select>
+    <lable for="game-image">Image URL</lable>
+    <input id="game-image" type="text" name="image">
+    <input type="submit" value="Add Game">
+  </form>
+</body>
+</html>
